@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: #f3f3f3;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+input {
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  color: #f3f3f3;
+  padding: 0.5rem 1.5rem;
+  width: max-content;
+}
+
+.btn-primary {
+  background: rgb(220, 152, 27);
+}
+
+.btn-outlined {
+  padding: 0.5rem;
+  color: rgb(220, 152, 27);
+  border: 1px solid rgb(220, 152, 27);
+  border-radius: 10px;
+}
+
+.btn-outlined:hover {
+  background-color: rgb(220, 152, 27);
+  color: #f3f3f3;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.py-4 {
+  padding: 4rem 0;
+}
+
+#top-bar {
+  background: #f3f3f3;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.406);
+}
+
+#top-bar .container {
+  display: grid;
+  grid-template-columns: 6fr 1fr 1fr;
+  padding: 0 0.5rem;
+  align-items: center;
+}
+
+#top-bar .logo {
+  width: 150px;
+  cursor: pointer;
+}
+
+#hero {
+  color: #f3f3f3;
+  background: black;
+  padding: 2rem;
+  position: relative;
+}
+
+#hero:before {
+  content: "";
+  background: url(img/hero.png) no-repeat center 80% / cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+#hero .hero-container {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+#hero .container .hero-container .hero-content {
+  z-index: 1;
+}
+
+#job-categories .categories-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding-bottom: 3rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.468);
+  border-radius: 15px;
+  transition: all 0.6s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+#job-categories .categories-container .web-development {
+  grid-row: 2 / 3;
+  grid-column: 2 / 4;
+}
+
+#job-categories .categories-container .card {
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+}
+
+#job-categories .categories-container .card h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+#job-categories .categories-container .card:nth-child(3n + 1) {
+  flex-direction: column-reverse;
+}
+
+.category {
+  display: inline-block;
+  color: white;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  line-height: normal;
+  padding: 0.5rem 0.7rem;
+  border-radius: 15px;
+  margin: 0.5rem 0;
+}
+
+.category-healthcare {
+  background: #43a3f7;
+}
+.category-finance {
+  background: #ababab;
+}
+.category-hardware {
+  background: #920018;
+}
+.category-software {
+  background: #009cff;
+}
+.category-cyber {
+  background: #00d9ff;
+}
+.category-engineering {
+  background: #fcf421;
+  color: #333;
+  border: 1px solid #e1e1e1;
+}
+.category-weddings {
+  border: 1px solid #777;
+  color: #777;
+}
+.category-web-development {
+  background: #333;
+}
+.category-fashion {
+  background: #f19ef5;
+}
+.category-design {
+  background: #f501d1;
+}
+.category-transportation {
+  background: #2bcd33;
+}
+
+#footer {
+  height: 100%;
+  background: #505050;
+  color: #f4efef;
+}
+
+#footer .logo {
+  width: 230px;
+}
+
+#footer input {
+  width: 100%;
+  padding: 0.9rem;
+  margin-top: 0.7rem;
+}
+
+#footer .email {
+  padding: 0.5rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.footer-container .about {
+  padding-right: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer .copyright {
+  text-align: center;
+}
+
+#footer .join-now {
+  width: 100%;
+  text-align: center;
+}
